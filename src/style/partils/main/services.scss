@@ -1,0 +1,352 @@
+.services {
+    padding: 74px 0;
+
+    &__title {
+        font-size: 35px;
+        line-height: 2.3;
+        font-family: 'Graphik Cy-bold';
+        
+    }
+    &__item {
+        position: relative;
+        overflow: hidden;
+        margin: 21px 15px 49px 15px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        &-wrapper{
+            height: 360px;
+            padding: 16px 29px 29px 29px;
+            // flex: 1 100%;
+            background: #ACACCD;
+
+            
+        }
+
+        &-wrapper_color {
+           background: #BEA08B;
+        }
+        
+
+        &_title {
+            // font-family: 'Graphik LC Web';
+            display: flex;
+            font-size: 12px;
+            line-height: 6.66;
+            word-spacing: 1px;
+            letter-spacing: 0.18;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    &__item:nth-child(1) {
+        margin-left: 0;
+        // background: #ACACCD;
+    }
+
+    
+
+    &__item:nth-child(2) {
+        margin-right: 0;
+        // background: #BEA08B;
+    }
+
+    &__content {
+        max-width: 350px;
+        margin-top:12px ;
+
+            &_title {
+                font-size: 25px;
+                line-height: 1.2;
+                font-family: 'Graphik Cy-bold';
+                color: $white;
+            }
+
+            &_text {
+                width: 446px;
+                max-width: 100%;
+                margin-top: 14px;
+                padding-bottom: 119px;
+                font-family: 'Graphik Cy';
+                font-size: 14px;
+                line-height: 1.45;
+                color: $white;
+
+                & span {
+                    display: block;
+                    width: 310px;
+                }
+            }
+
+            &_footer {
+                height: 70px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                // padding: 16px 29px;
+                border: 1px solid rgba(136, 144, 161, 0.2);;
+                background: rgba(136, 144, 161, 0.1);
+                font-family: 'Graphik LC Web';
+                font-size: 18px;
+                line-height: 1.66;
+                // color: #8890A1;
+
+            }
+    }
+
+    &__image {
+        position: absolute;
+        top: 17px;
+        right: -33px;
+
+        &_item {
+            // position: absolute;
+            // top: 10px;
+            // right:-40px;
+        }
+
+        &_position-right {
+            right: -28px;
+        }
+    } 
+
+    &__link {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 16px 29px;
+        text-decoration: none;
+        color: #8890A1;
+    }
+
+    &__link::after{
+        content: '';
+        position: absolute;
+        right: 30px;
+        // top: 7px;
+        border-right: 2px solid #8890A1;
+        border-bottom: 2px solid #8890A1 ;
+        height: 7.5px;
+        width: 7.5px;
+        transform: rotate(-45deg);
+    }
+
+    &__link::before{
+
+        content: '';
+        position: absolute;
+        right: 30px;
+        // top: 7px;
+        width: 32px;
+        height: 2px;
+        background: #8890A1;
+        // transform: rotate(-90deg);
+
+    }
+
+    
+
+    &__money {
+        margin-top: 2px;
+        margin-bottom: 0    ;
+
+        &_title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 21px;
+            font-size: 18px;
+            line-height: 1.66;
+            font-family: 'Graphik LC Web';
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.01;
+            color: #FF5D39;
+            text-transform: unset;
+
+            &::before {
+                content: '';
+                width: 25.31px;
+                height: 21px;
+                background-image: url('../images/money.svg');
+                background-repeat: no-repeat;
+                margin-right: 9.69px;
+            }
+    
+            &-text {
+                margin-left: 9px;
+                color: #8890A1;
+            }
+        }
+
+
+        &_wrapper {
+            padding-top: 0;
+            background: none;
+            border: 1px solid rgba(136, 144, 161, 0.2);
+        }
+    }
+
+    &__coins {
+            
+        &_title {
+            &::before {
+                width: 22px;
+                height: 29px;
+                background-image: url('../images/coins.svg');
+            }
+        }
+
+    }   
+
+    &__table {
+        flex: 1;
+
+        &_list {
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
+        &_item {
+            display: flex;
+            flex-wrap: wrap;
+            
+            &_mrg-top {
+                margin-top: 20px;
+            }
+        }
+
+        &_item:first-child {
+            padding: 17px 0 12px 0;;
+            border-bottom: 1px solid rgba(136, 144, 161, 0.2);
+        }
+
+        
+
+        &_name {
+            flex: 1 20%;
+            margin:26px 0 0 0;
+
+            &-mrg-top {
+                margin-top: 0;
+            }
+        }
+
+        &_name:last-child {
+            margin-right: 0;
+        }
+
+        &_name:first-child {
+            padding-left: 0;
+        }
+
+        &_text {
+            font-family: 'Graphik Cy';
+            font-size: 12px;
+            line-height: 1.08;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        &_currency {
+            font-family: 'Graphik Cy-bold';
+            font-size: 18px;
+            line-height: 1.11;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #8890A1;
+        }
+
+        &_price {
+            font-family: 'Graphik LC Web';
+            font-size: 18px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #000000;
+        }
+
+        &_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1 70%;
+            align-items: center;
+            margin: 54px 0px 0 0;
+        }
+
+        &_title {
+            flex: 1 100%;
+            font-family: 'Graphik Cy';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 1.1;
+            color: #8890A1
+        }
+
+        &_coins-image {
+            align-self: center;
+        }
+    }
+
+    &__arrow_growth,&__arrow_falling {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-right:19px ;
+    }
+
+    &__arrow_growth_mrg-right,&__arrow_falling_mrg-right{
+        margin-right: 0;
+    }
+    
+    &__arrow_falling::after {//falling
+        content: '';
+        position: absolute;
+        right: 1.1px;
+        top: 7px;
+        border-right: 2px solid #FF5D39;
+        border-bottom: 2px solid #FF5D39 ;
+        height: 5px;
+        width: 5px;
+        transform: rotate(45deg);
+    }
+
+    &__arrow_falling::before {//falling
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 7px;
+        width: 10px;
+        height: 2px;
+        background: #FF5D39;
+        transform: rotate(-90deg);
+    }
+
+    &__arrow_growth::after {//growth
+        content: '';
+        position: absolute;
+        right: 1.1px;
+        top: 1px;
+        border-right: 2px solid $blue;
+        border-bottom: 2px solid $blue ;
+        height: 5px;
+        width: 5px;
+        transform: rotate(225deg);
+    }
+
+    &__arrow_growth::before {//growth
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 7px;
+        width: 10px;
+        height: 2px;
+        background: $blue;
+        transform: rotate(-90deg);
+    }
+    
+}

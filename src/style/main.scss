@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$gray: #f4f4f6;
+$black: #000000;
+$white: #ffffff;
+$blue: #003db1;
+$orange: #ed8200;
+
+@font-face {
+    font-family: 'Graphik Cy';
+    src: url(../fonts/GraphikLCWeb-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LC Web';
+    src: url(../fonts/Graphik-Medium-Web.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik Cy-bold';
+    src: url(../fonts/GraphikLCWeb-Bold.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    color: $black;
+    font-family: 'Graphik Cy';
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// h1,
+// h2,
+// h3 {
+//     font-weight: normal;
+// }
+
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+input,textarea:focus{
+    outline: none;
+}
+
+textarea {
+    border-radius: 25px;
+    resize: none;
+}
+
+@import "partils/header.scss";
+
+@import "partils/main.scss";
+
+@import "partils/news.scss";
+
+@import "partils/footer.scss";
+
+@import "partils/adaptive.scss";

@@ -1,0 +1,59 @@
+.footer {
+    margin-top: 145px;
+    padding: 73.51px 0;
+    background: #1E1F28;
+
+    &__nav {
+        
+        &_list {
+            display: flex;
+            list-style: none;
+        }
+
+        &_item {
+            flex: 1;
+            margin: 0 15px;
+            font-family: 'Graphik LC Web';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.66;
+            
+        }
+
+        &_item:first-child {
+            margin-left: 0;
+        }
+
+        &_item:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+
+        &_color {
+            color: #8890A1;
+        }
+       
+    }
+
+    &__subnav {
+
+        &_list {
+            list-style: none;
+        }
+
+        &_item {
+            font-family: 'Graphik Cy';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 2.85;
+            
+        }
+    }
+}

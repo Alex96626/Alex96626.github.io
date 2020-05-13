@@ -1,0 +1,111 @@
+.section-service-2 {
+    margin-top: 6px;
+    padding-top: 0;
+}
+
+.services-2 {
+    position: relative;
+    overflow: hidden;
+    // margin-top: 30px;
+    margin-bottom: 61px;
+    padding: 53px 40px 50px 40px;
+    background: #F4F4F6;
+
+    &__title {
+        font-family: 'Graphik Cy-bold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+
+        &_color-blue{
+            font-family: 'Graphik LC Web';
+            color: $blue;
+        }
+    }
+
+    &__text {
+        display: block;
+        margin-top: 11px;
+        margin-bottom: 24px;
+        font-family: 'Graphik Cy';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.4;
+        color: #8890A1;
+
+        &_w {
+            width: 260px;
+        }
+
+        &-1 {
+            width: 415px;
+        }
+
+        &-4 {
+            width: 214px;
+        }
+
+        &-5 {
+            width: 400px;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: -138px;
+        right: 27px;
+
+        &-4 {
+            right: -36px;
+            top: 94px;
+        }
+
+        &_pos {
+            top: auto;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    &__flex_2 {
+        flex: 2 40%;
+        margin: 15px;
+    }
+
+    &__flex_1 {
+        min-width: 369px;
+        flex: 1 19%;
+        margin: 15px;
+    }
+
+    &__flex_2:first-child {
+        margin-left: 0;
+    }
+
+    &__flex_1:nth-child(3) {
+        margin-left: 0;
+    }
+
+    &__flex_1:nth-child(2) {
+        margin-right: 0;
+    }
+
+    &__flex_2:last-child {
+        margin-right: 0;
+    }
+
+    &__card {
+        height: 380px;
+        padding-bottom: 191px;
+        padding-top: 60px;
+    }
+}
